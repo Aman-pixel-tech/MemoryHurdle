@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Poem from './components/poem';
 import Poet from './components/poet';
@@ -14,7 +15,6 @@ import Game from './components/game';
 import Phone from './components/phone';
 import Final from './components/final';
 import Cert from './components/cert';
-import { HashRouter, Route, Routes } from 'react-router-dom';
 import Cardalpha from './components/cardalpha';
 import './components/nav.css';
 import './app.css';
