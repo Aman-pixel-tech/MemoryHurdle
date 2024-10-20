@@ -21,9 +21,10 @@ import './app.css';
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/MemoryHurdle">
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Navbar />} />
+        <Route path="/" element={<Cardalpha />} />
         <Route path="/ABC" element={<Cardalpha />} />
         <Route path="/poem1" element={<Poem />} />
         <Route path="/twinkle" element={<Poet />} />
