@@ -21,7 +21,7 @@ import './app.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MemoryHurdle">
 
     <Routes>
       <Route   path="/"
