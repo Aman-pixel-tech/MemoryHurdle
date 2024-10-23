@@ -39,9 +39,8 @@ function App() {
         <Route path="/phone" element={<Phone />} />
         <Route path="/final" element={<Final />} />
         <Route path="/cert" element={<Cert />} />
-        
-        {/* Catch-all route for 404 */}
-        <Route path="*" element={<div>404 Not Found</div>} />
+        {/* Add a wildcard route to handle undefined paths */}
+        <Route path="*" element={<div>404 - Page Not Found</div>} />
       </Routes>
     </BrowserRouter>
   );
