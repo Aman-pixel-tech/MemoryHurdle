@@ -14,16 +14,17 @@ import Game from './components/game';
 import Phone from './components/phone';
 import Final from './components/final';
 import Cert from './components/cert';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Cardalpha from './components/cardalpha';
 import './components/nav.css';
 import './app.css';
 
 function App() {
   return (
-    <BrowserRouter basename="/MemoryHurdle">
+    <HashRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Navbar />} />
+        <Route path="/" element={<Cardalpha />} />
         <Route path="/ABC" element={<Cardalpha />} />
         <Route path="/poem1" element={<Poem />} />
         <Route path="/twinkle" element={<Poet />} />
@@ -39,10 +40,8 @@ function App() {
         <Route path="/phone" element={<Phone />} />
         <Route path="/final" element={<Final />} />
         <Route path="/cert" element={<Cert />} />
-        {/* Add a wildcard route to handle undefined paths */}
-        <Route path="*" element={<div>404 - Page Not Found</div>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
